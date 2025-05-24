@@ -34,27 +34,6 @@ function convertWeight(value, fromUnit, toUnit) {
     case "ct":
       valueInKg = value / 5000;
       break;
-    case "µg":
-      valueInKg = value / 1e9;
-      break;
-    case "dag":
-      valueInKg = value / 100;
-      break;
-    case "cg":
-      valueInKg = value / 100000;
-      break;
-    case "hg":
-      valueInKg = value / 10;
-      break;
-    case "cwt":
-      valueInKg = value * 45.3592;
-      break;
-    case "lt":
-      valueInKg = value * 1016.05;
-      break;
-    case "gr":
-      valueInKg = value / 15432.4;
-      break;
     default:
       valueInKg = value;
   }
@@ -85,27 +64,6 @@ function convertWeight(value, fromUnit, toUnit) {
       break;
     case "ct":
       convertedValue = valueInKg * 5000;
-      break;
-    case "µg":
-      convertedValue = valueInKg * 1e9;
-      break;
-    case "dag":
-      convertedValue = valueInKg * 100;
-      break;
-    case "cg":
-      convertedValue = valueInKg * 100000;
-      break;
-    case "hg":
-      convertedValue = valueInKg * 10;
-      break;
-    case "cwt":
-      convertedValue = valueInKg / 45.3592;
-      break;
-    case "lt":
-      convertedValue = valueInKg / 1016.05;
-      break;
-    case "gr":
-      convertedValue = valueInKg * 15432.4;
       break;
     default:
       convertedValue = valueInKg;
