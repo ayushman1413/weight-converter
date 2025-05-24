@@ -22,6 +22,18 @@ function convertWeight(value, fromUnit, toUnit) {
     case "oz":
       valueInKg = value / 35.274;
       break;
+    case "mg":
+      valueInKg = value / 1e6;
+      break;
+    case "st":
+      valueInKg = value * 6.35029;
+      break;
+    case "t":
+      valueInKg = value * 1000;
+      break;
+    case "ct":
+      valueInKg = value / 5000;
+      break;
     default:
       valueInKg = value;
   }
@@ -40,6 +52,18 @@ function convertWeight(value, fromUnit, toUnit) {
       break;
     case "oz":
       convertedValue = valueInKg * 35.274;
+      break;
+    case "mg":
+      convertedValue = valueInKg * 1e6;
+      break;
+    case "st":
+      convertedValue = valueInKg / 6.35029;
+      break;
+    case "t":
+      convertedValue = valueInKg / 1000;
+      break;
+    case "ct":
+      convertedValue = valueInKg * 5000;
       break;
     default:
       convertedValue = valueInKg;
