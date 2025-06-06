@@ -175,6 +175,7 @@ const convertBtn = document.getElementById("convert");
 const clearBtn = document.getElementById("clear");
 
 function convertWeight(value, fromUnit, toUnit) {
+    
   let valueInKg;
   switch (fromUnit) {
     case "kg":
@@ -204,7 +205,7 @@ function convertWeight(value, fromUnit, toUnit) {
     default:
       valueInKg = value;
   }
-  
+
   let convertedValue;
   switch (toUnit) {
     case "kg":
